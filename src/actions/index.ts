@@ -1,6 +1,6 @@
-import { TodoAction, TodoToggleAction, VisibilityFilterAction, Filter } from '../../types'
+import { AddTodoAction, TodoToggleAction, VisibilityFilterAction, Filter } from '../../types'
 
-export const addTodo = (text: string, id: number): TodoAction => (
+export const addTodo = (text: string, id: number): AddTodoAction => (
   {
     type: 'ADD_TODO',
     id,

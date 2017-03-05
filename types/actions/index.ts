@@ -1,6 +1,6 @@
 export type Filter = 'SHOW_ALL' | 'SHOW_ACTIVE' | 'SHOW_COMPLETED'
 
-export interface TodoAction {
+export interface AddTodoAction {
   readonly type: 'ADD_TODO'
   readonly id: number
   readonly text: string
@@ -16,4 +16,4 @@ export interface VisibilityFilterAction {
   readonly filter: Filter
 }
 
-export type TodoActions = TodoAction | TodoToggleAction | VisibilityFilterAction
+export type TodoActions = AddTodoAction | TodoToggleAction

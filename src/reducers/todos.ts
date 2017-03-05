@@ -1,7 +1,7 @@
 import { TodoActions, TodoState } from '../../types'
 
 
-const todo = (state: TodoState = {}, action: TodoActions) => {
+export const todo = (state: TodoState = {}, action: TodoActions) => {
   switch (action.type) {
     case 'ADD_TODO':
       return {
