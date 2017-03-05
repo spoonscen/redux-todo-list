@@ -1,11 +1,9 @@
 import { TodoAction, TodoToggleAction, VisibilityFilterAction, Filter } from '../../types'
 
-let nextTodoId = 0
-
-export const addTodo = (text: string): TodoAction => (
+export const addTodo = (text: string, id: number): TodoAction => (
   {
     type: 'ADD_TODO',
-    id: nextTodoId++,
+    id,
     text,
   }
 )

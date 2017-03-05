@@ -4,7 +4,7 @@
   "description": "Practice app for react-redux",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha -r ts-node/register test/**/*.spec.ts"
   },
   "author": "",
   "license": "ISC",
@@ -17,9 +17,14 @@
     "redux": "^3.6.0"
   },
   "devDependencies": {
+    "@types/chai": "^3.4.35",
+    "@types/mocha": "^2.2.39",
     "@types/react-redux": "^4.4.36",
     "awesome-typescript-loader": "^3.0.8",
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0",
     "source-map-loader": "^0.1.6",
+    "ts-node": "^2.1.0",
     "typescript": "^2.2.1"
   }
 }

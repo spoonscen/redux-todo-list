@@ -8,7 +8,7 @@ let AddTodo = ({ dispatch }: {dispatch?: any}) => {
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
     if (!input.value.trim()) return
-    dispatch(addTodo(input.value))
+    dispatch(addTodo(input.value, Date.now()))
     input.value = ''
   }
 
