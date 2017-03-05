@@ -3,18 +3,18 @@ import { Todo } from '../index'
 export type OnTodoClick = (id: number) => void
 
 export interface TodoProps {
-  onClick: any
-  completed: boolean
-  text: string
+  readonly onClick: any
+  readonly completed: boolean
+  readonly text: string
 }
 
 export interface TodoListProps {
-  todos: Todo[]
-  onTodoClick: OnTodoClick
+  readonly todos: Todo[]
+  readonly onTodoClick: OnTodoClick
 }
 
 export interface LinkProps {
-  active: boolean
-  children: JSX.Element
-  onClick: () => void
+  readonly active: boolean
+  readonly children: JSX.Element
+  readonly onClick: () => void
 }

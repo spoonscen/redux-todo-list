@@ -4,7 +4,7 @@ export * from './containers'
 export * from './reducers'
 
 export interface Todo {
-  id: number,
-  text: string,
-  completed: boolean
+  readonly id: number,
+  readonly text: string,
+  readonly completed: boolean
 }

@@ -1,19 +1,19 @@
 export type Filter = 'SHOW_ALL' | 'SHOW_ACTIVE' | 'SHOW_COMPLETED'
 
 export interface TodoAction {
-  type: 'ADD_TODO'
-  id: number
-  text: string
-}
-
-export interface VisibilityFilterAction {
-  type: 'SET_VISIBILITY_FILTER'
-  filter: Filter
+  readonly type: 'ADD_TODO'
+  readonly id: number
+  readonly text: string
 }
 
 export interface TodoToggleAction {
-  type: 'TOGGLE_TODO',
-  id: number
+  readonly type: 'TOGGLE_TODO',
+  readonly id: number
+}
+
+export interface VisibilityFilterAction {
+  readonly type: 'SET_VISIBILITY_FILTER'
+  readonly filter: Filter
 }
 
 export type TodoActions = TodoAction | TodoToggleAction | VisibilityFilterAction

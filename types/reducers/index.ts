@@ -1,4 +1,4 @@
 export interface TodoState {
-  completed?: boolean
-  id?: number
+  readonly completed?: boolean
+  readonly id?: number
 }

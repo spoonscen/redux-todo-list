@@ -1,10 +1,10 @@
 import { Todo, Filter } from '../index'
 
 export interface TodoListState {
-  todos: Todo[]
-  visibilityFilter: Filter
+  readonly todos: Todo[]
+  readonly visibilityFilter: Filter
 }
 
 export interface OwnProps {
-  filter: Filter
+  readonly filter: Filter
 }
