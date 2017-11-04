@@ -1,6 +1,5 @@
 import { expect } from 'chai'
 import { todo } from '../../src/reducers/todos'
-import { AddTodoAction, TodoToggleAction } from '../../types'
 
 describe('todo reducer', () => {
   it('handles an ADD_TODO action', () => {
@@ -9,7 +8,7 @@ describe('todo reducer', () => {
       type: 'ADD_TODO',
       text: 'foo',
       id: Date.now()
-    } as AddTodoAction
+    } as any
     expect(todo(mockState, mockAddTodoAction)).to.eql({
       id: mockAddTodoAction.id,
       text: mockAddTodoAction.text,
@@ -26,7 +25,7 @@ describe('todo reducer', () => {
       type: 'TOGGLE_TODO',
       text: 'foo',
       id: mockId
-    } as TodoToggleAction
+    } as any
     expect(todo(mockState, mockToggleTodoAction)).to.eql({
       id: mockToggleTodoAction.id,
       completed: !mockState.completed

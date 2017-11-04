@@ -1,7 +1,6 @@
 import { connect } from 'react-redux'
 import { setVisibilityFilter } from '../actions'
 import Link from '../components/Link'
-import { TodoListState, OwnProps } from '../../types'
 
 const mapStateToProps = (state: TodoListState, ownProps: OwnProps) => (
   {

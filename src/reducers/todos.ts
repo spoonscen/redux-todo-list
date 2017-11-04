@@ -1,6 +1,3 @@
-import { TodoActions, TodoState } from '../../types'
-
-
 export const todo = (state: TodoState = {}, action: TodoActions) => {
   switch (action.type) {
     case 'ADD_TODO':
@@ -18,8 +15,6 @@ export const todo = (state: TodoState = {}, action: TodoActions) => {
       return state
   }
 }
-
-
 
 const todos = (state: TodoState[] = [], action: TodoActions) => {
   switch (action.type) {

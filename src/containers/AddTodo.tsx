@@ -2,7 +2,7 @@ import * as React from 'react'
 import { connect } from 'react-redux'
 import { addTodo } from '../actions'
 
-let AddTodo = ({ dispatch }: {dispatch?: any}) => {
+let AddTodo = ({ dispatch }: any) => {
   let input: HTMLInputElement
 
   const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
@@ -15,7 +15,7 @@ let AddTodo = ({ dispatch }: {dispatch?: any}) => {
   return (
     <div>
       <form onSubmit={e => onSubmit(e)}>
-        <input ref={ node => { input = node }} />
+        <input ref={node => { input = node }} />
         <button type="submit">Add Todo</button>
       </form>
     </div>
